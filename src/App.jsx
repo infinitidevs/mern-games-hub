@@ -1,13 +1,12 @@
-import "./App.css";
+import { HeaderWrapper } from './App.styles';
 
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
 const App = () => {
   return (
-    <>
-      <Header />
-      <Footer />
-    </>
+    <div>
+      <HeaderWrapper>
+        <h1>Games Hub</h1>
+      </HeaderWrapper>
+    </div>
   );
 };
 
