@@ -9,11 +9,11 @@ const App = () => {
     <div>
       <HeaderWrapper>
         <h1>Games Hub</h1>
-        <Home />
-        <TicTacToe />
-        <Hangman />
-        <Sudoku />
       </HeaderWrapper>
+      <Home />
+      <TicTacToe />
+      <Hangman />
+      <Sudoku />
     </div>
   );
 };
