@@ -1,3 +1,6 @@
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyles = createGlobalStyle`
 :root {
   --ah-color-100: #fffffe;
   --ah-color-200: #6FC3DF;
@@ -19,7 +22,7 @@
 
   color: var(--ah-color-light);
   background-color: var(--ah-color-dark);
-
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -49,7 +52,6 @@ a {
   color: #646cff;
   text-decoration: none;
 }
-
 a:hover {
   color: #535bf2;
 }
@@ -87,3 +89,4 @@ button:disabled {
   padding: 2rem;
   text-align: center;
 }
+`;
