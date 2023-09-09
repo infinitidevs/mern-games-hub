@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Card from '../../components/Card/Card';
+import LogoutBtn from '../../components/LogoutBtn/LogoutBtn';
 import links from '../../constants/home';
 import { CardsWrapper, Container, Heading } from './Styles';
 
@@ -10,6 +11,7 @@ const Home = () => {
     <Container>
       <Heading>
         <h2>Select a game</h2>
+        <LogoutBtn />
       </Heading>
       <CardsWrapper>
         {links.map(({ url, heading, image, text }) => (
