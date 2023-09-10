@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
+import HomeReturn from '../../components/HomeReturn/HomeReturn';
 import TicTacToeBoard from '../../components/TicTacToeBoard/TicTacToeBoard';
 import { Container, Heading } from './styles';
 
@@ -16,9 +16,7 @@ const TicTacToe = () => {
         </button>
       </Heading>
       {isStarted ? <TicTacToeBoard /> : null}
-      <Link to="/">
-        <img src="/src/assets/home.svg" alt="Home Icon" type="xml/svg" />
-      </Link>
+      <HomeReturn />
     </Container>
   );
 };

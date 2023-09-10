@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
+import HomeReturn from '../../components/HomeReturn/HomeReturn';
 import SudokuBoard from '../../components/SudokuBoard/SudokuBoard';
 import { Container, Heading } from './styles';
 
@@ -16,9 +16,7 @@ const Sudoku = () => {
         </button>
       </Heading>
       {isStarted ? <SudokuBoard /> : null}
-      <Link to="/">
-        <img src="/src/assets/home.svg" alt="Home Icon" type="svg" />
-      </Link>
+      <HomeReturn />
     </Container>
   );
 };

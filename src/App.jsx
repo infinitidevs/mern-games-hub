@@ -15,7 +15,10 @@ const App = () => {
   return (
     <>
       <HeaderWrapper>
-        <img src="/src/assets/favicon/favicon.ico" alt="Logo" />
+        <img
+          src="https://cdn.jsdelivr.net/gh/infinitidevs/mern-games-hub@main/src/assets/favicon/favicon.ico"
+          alt="Logo"
+        />
         <h1>Games Hub</h1>
       </HeaderWrapper>
       <main>
