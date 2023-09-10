@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (data) => {
     const userData = data;
-    userData.email === 'access@rtc' && userData.password === 'granted'
+    userData.email.match('access@rtc') && userData.password.match('granted')
       ? setUser(userData)
       : setUser(null);
     navigate('home', { replace: true });
